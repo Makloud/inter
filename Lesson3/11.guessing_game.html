@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<script>
+    var answer = parseInt(Math.random() * 100);
+    var playerNumber = 1;
+
+    while (true) {
+        var userAnswer = prompt("Угадайте число от 0 до 100\nДля выхода нажмите q");
+
+        if (userAnswer == "q") {
+            break;
+        }
+
+        userAnswer = parseInt(userAnswer);
+        if (userAnswer == answer) {
+            alert("Число угадано!");
+            break;
+        } else if (userAnswer > answer) {
+            alert("Меньше");
+        } else if (userAnswer < answer) {
+            alert("Больше");
+        }
+    }
+</script>
